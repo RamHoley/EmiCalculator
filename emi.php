@@ -49,7 +49,7 @@
 </head>
   
 <body>
-    <form action="dbconnection.php" method="post">
+    <form action="" method="">
     <div class="calculator">
         <h1><marquee>EMI Calculator</marquee></h1>
   
