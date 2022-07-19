@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            background-color: rgba(129, 129, 240, 0.599);
+        }
+        #box1{
+            width:28%;
+            margin:auto;
+            margin-top:20vh;
+            height:60vh;
+            padding: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+
+        }
+        #signup{
+            font-size: large;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+            padding-top:20px;
+        }
+        #box2{
+            display: flex;
+            text-align: left;
+             justify-content: center; 
+        
+        }
+        label{
+            color:#BA55D3;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- <fieldset >
+        <legend>Registration form</legend> -->
+        <div id="box1">
+            <h1 id="signup">Sign Up</h1>
+            <div id="box2">
+                
+                <form action="connect.php"
+            method="post" >
+                <label for="myusername">Username  &nbsp;&nbsp;</label> <br><input type="text" id="myusername"
+                name="username" value="">
+                <br><br>
+                <label for="password">Password  &nbsp;&nbsp;&nbsp;</label> <br><input type="password" id="password"
+                name="password" value="">
+                 <br><br>
+        
+                <label for="gender">Gender  &nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                <input type="radio" name="gender"
+                value="m">Male &nbsp;&nbsp;
+                <input type="radio" value="f"
+                name="gender" >Female <br><br>
+        
+                
+                <label for="email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                <input type="email" id="email" name="email" value="" >
+                 <br><br>
+        
+                <label for="number">Mobile No&nbsp; &nbsp;</label><br>
+                <input type="phone" id="number"  name="phone" value="">
+                <br><br>
+                
+        
+               <!-- <a href="">Submit</a> -->
+                <!-- <input onclick= "login.php">Submit -->
+              <!-- <a href="C:\xampp\htdocs\cwh\login.php">
+                <input type="submit" >
+                </a> -->
+                <!-- <button type="submit">Send</button> -->
+                <button onclick="login()" >Submit</button>
+        
+            </form> 
+
+            </div>
+
+            
+            
+          &nbsp;&nbsp;&nbsp;  <a href="login.php">Login</a>
+        </div>
+   
+
+<!-- </fieldset> -->
+</body>
+</html>
+<script>
+    function login()
+{
+    window.location.href="login.php"
+    
+}
+</script>
